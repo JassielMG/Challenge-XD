@@ -11,7 +11,7 @@ For that case i simulated the construction of a database, the design of its tabl
 ### USAGE
 I recommend following the installation process if you want to interact with the notebook and run the code. If you just want to see the results, you can open the notebook on GitHub and see the results there.
 
-### Installation
+### Bare metal installation
 1.- Clone the repository
 ```
 git clone https://github.com/JassielMG/Challenge-XD.git
@@ -33,3 +33,23 @@ pip install -r requirements.txt
 ```
 jupyter notebook
 ```
+
+### Docker installation
+
+1.- Clone the repository
+```
+git clone https://github.com/JassielMG/Challenge-XD.git
+cd Challenge-XD
+```
+
+2.- Build the image
+```
+docker build -t xaldi .
+```
+
+3.- Run the container
+```
+docker run -p 8888:8888 xaldi
+```
+
+4.- Open jupter notebook on your browser using localhost:8888
